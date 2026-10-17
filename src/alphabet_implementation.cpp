@@ -8,35 +8,29 @@ namespace abc{
 	};
 	
 	int alphabetCount(const std::string &s){
-		std::unordered_map <char, int> list;
-	
+		int num = 0;
 		for(char c : s){
-			list[std::toupper(c)]++;
+			if((c >= 'a' && c <= 'z') || (c >= 'A' && c <='Z')){
+				num++;
+			}
 		}
-		
-		int sum = 0;
-		for(int i = 0; i < 26; i++){
-			sum += list[alphabet[i]];
-		}
-	
-		return sum;
+		return num;
 	}
 	
 	int alphabetCountUnique(const std::string &s){
-		std::unordered_map <char, int> list;
-	
-		for(char c : s){
-			list[std::toupper(c)]++;
-		}
+		int arr[26] = {};
 		
-		int sum = 0;
-		for(int i = 0; i < 26; i++){
-			if(list[alphabet[i]] > 0){
-				sum++;
+		int num = 0;
+		for(char c : s){
+			if((c >= 'a' && c <= 'z') || (c >= 'A' && c <='Z')){
+				if(arr[c - 'a' < 0 ? (c - 'A') : (c - 'a')] == 0){
+					num++;
+					arr[c - 'a' < 0 ? (c - 'A') : (c - 'a')]++;
+				}
 			}
 		}
 		
-		return sum;
+		return num;
 	}
 	
 	int specialCharacterCount(const std::string &s, type n){
