@@ -1,7 +1,6 @@
 #ifndef ALPHA
 #define ALPHA
 
-#include<unordered_map>
 #include<cctype>
 #include<string>
 
