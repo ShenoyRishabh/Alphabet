@@ -77,3 +77,9 @@ will return ```"hello world!1'```
 
 ## Enum 'type'
 Currently used only in the [specialCharacterCount](#specialCharacterCount) function as a parameter, and has only two members.
+
+(i)WITH_SPACES, and
+(ii) NORMAL
+
+'NORMAL' is, in whichever function(s) it is called, supposed to execute that particular function with no special cases or differences.
+'WITH_SPACES' is currently the only 'special case' member intended to include spaces in whichever function(s) that accept it as a parameter.
