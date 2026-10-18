@@ -31,7 +31,7 @@ alphabetCountUnique("Hello!1");
 will return 7.
 
 ### specialCharacterCount
-Takes two parameters: a **string** and an **enum 'type'**(more [over here](#Enum 'type')) and returns the special characters, i.e, anything in the ASCII table except characters, numbers and spaces(based on 'type')
+Takes two parameters: a **string** and an **enum 'type'**(more [over here](#enum-type)) and returns the special characters, i.e, anything in the ASCII table except characters, numbers and spaces(based on 'type')
 
 If 'type' is:
       NORMAL: Spaces are excluded from special character list.
@@ -76,4 +76,4 @@ capitalAll("Hello World!1")
 will return ```"hello world!1'```
 
 ## Enum 'type'
-Currently used only in the [specialCharacterCount](###specialCharacterCount) function as a parameter, and has only two members.
+Currently used only in the [specialCharacterCount](#specialCharacterCount) function as a parameter, and has only two members.
